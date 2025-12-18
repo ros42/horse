@@ -8,7 +8,7 @@ from typing import Optional, Dict, Any
 from dataclasses import dataclass, field
 from enum import IntEnum
 
-from .modbus_manager import ModbusManager, ConnectionConfig
+from modbus_manager import ModbusManager, ConnectionConfig
 
 logger = logging.getLogger(__name__)
 

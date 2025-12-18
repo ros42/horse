@@ -12,7 +12,7 @@ from PyQt6.QtWidgets import (
 from PyQt6.QtCore import Qt, pyqtSignal
 from PyQt6.QtGui import QFont
 
-from ..servo_device import A5ServoDevice, ServoStatus
+from servo_device import A5ServoDevice, ServoStatus
 
 
 class ServoPanel(QWidget):

@@ -10,6 +10,11 @@ import sys
 import logging
 from pathlib import Path
 
+# Добавляем путь src в sys.path для корректных импортов
+SRC_DIR = Path(__file__).parent
+if str(SRC_DIR) not in sys.path:
+    sys.path.insert(0, str(SRC_DIR))
+
 from PyQt6.QtWidgets import QApplication
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QFont

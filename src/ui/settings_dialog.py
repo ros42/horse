@@ -14,7 +14,7 @@ from PyQt6.QtGui import QFont
 
 import serial.tools.list_ports
 
-from ..modbus_manager import ConnectionConfig
+from modbus_manager import ConnectionConfig
 
 
 class SettingsDialog(QDialog):

@@ -13,12 +13,12 @@ from PyQt6.QtWidgets import (
 from PyQt6.QtCore import Qt, QTimer
 from PyQt6.QtGui import QAction, QFont, QIcon
 
-from .servo_panel import ServoPanel
-from .motion_panel import MotionPanel
-from .settings_dialog import SettingsDialog
-from ..servo_device import A5ServoDevice
-from ..motion_controller import MotionController, MotionMode
-from ..modbus_manager import ConnectionConfig
+from ui.servo_panel import ServoPanel
+from ui.motion_panel import MotionPanel
+from ui.settings_dialog import SettingsDialog
+from servo_device import A5ServoDevice
+from motion_controller import MotionController, MotionMode
+from modbus_manager import ConnectionConfig
 
 logger = logging.getLogger(__name__)
 
