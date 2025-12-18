@@ -1,0 +1,39 @@
+{
+    "front_servo": {
+        "port": "COM3",
+        "slave_id": 1,
+        "baudrate": 115200,
+        "parity": "N",
+        "stopbits": 1
+    },
+    "rear_servo": {
+        "port": "COM4",
+        "slave_id": 2,
+        "baudrate": 115200,
+        "parity": "N",
+        "stopbits": 1
+    },
+    "motion_patterns": {
+        "walk": {
+            "name": "Шаг",
+            "cycle_time_ms": 2000,
+            "front_amplitude": 30,
+            "rear_amplitude": 30,
+            "phase_shift": 180
+        },
+        "gallop": {
+            "name": "Галоп",
+            "cycle_time_ms": 800,
+            "front_amplitude": 60,
+            "rear_amplitude": 60,
+            "phase_shift": 90
+        }
+    },
+    "registers_to_read": [
+        {"address": "0x0102", "name": "P01-02 Режим управления", "description": "Control mode"},
+        {"address": "0x0B00", "name": "P0B-00 Текущая позиция", "description": "Current position"},
+        {"address": "0x0B02", "name": "P0B-02 Текущая скорость", "description": "Current speed"},
+        {"address": "0x0B04", "name": "P0B-04 Текущий момент", "description": "Current torque"}
+    ]
+}
+
